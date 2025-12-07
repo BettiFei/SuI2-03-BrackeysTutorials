@@ -6,6 +6,7 @@ extends Node
 
 
 func _ready() -> void:
+	get_tree().paused = false
 	victory_overlay.hide()
 	ui.show()
 
@@ -16,10 +17,8 @@ func _on_ui_victory() -> void:
 
 
 func _on_replay_button_pressed() -> void:
-	get_tree().paused = false
 	get_tree().reload_current_scene()
 
 
 func _on_quit_button_pressed() -> void:
-	get_tree().paused = false
 	get_tree().quit()

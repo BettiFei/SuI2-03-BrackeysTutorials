@@ -11,7 +11,7 @@ signal victory
 func _ready() -> void:
 	due = get_tree().get_nodes_in_group("coin").size()
 	amount_due.text = str(due)
-	collected = 24
+	collected = 0
 	amount_collected.text = str(collected)
 
 func _physics_process(_delta: float) -> void:
