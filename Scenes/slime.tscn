@@ -44,6 +44,7 @@ animations = [{
 size = Vector2(12, 13)
 
 [node name="Slime" type="Node2D"]
+z_index = 1
 script = ExtResource("1_aiwxb")
 speed = 40
 
@@ -52,7 +53,7 @@ position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_y26kt")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.5177026
+frame_progress = 0.57440615
 
 [node name="Killzone" parent="." instance=ExtResource("3_f4si1")]
 
@@ -70,4 +71,4 @@ target_position = Vector2(-9, 0)
 
 [node name="RayCastDown" type="RayCast2D" parent="."]
 position = Vector2(0, -6)
-target_position = Vector2(0, 8)
+target_position = Vector2(0, 13)

@@ -747,3 +747,21 @@ position = Vector2(940, 286)
 [node name="Slime" parent="." instance=ExtResource("6_i6g32")]
 z_index = 1
 position = Vector2(105, 559)
+
+[node name="Slime2" parent="." instance=ExtResource("6_i6g32")]
+position = Vector2(216, 304)
+
+[node name="Slime3" parent="." instance=ExtResource("6_i6g32")]
+position = Vector2(425, 160)
+
+[node name="Slime4" parent="." instance=ExtResource("6_i6g32")]
+position = Vector2(666, 128)
+
+[node name="Slime5" parent="." instance=ExtResource("6_i6g32")]
+position = Vector2(873, 160)
+
+[node name="Slime6" parent="." instance=ExtResource("6_i6g32")]
+position = Vector2(1017, 320)
+
+[node name="Slime7" parent="." instance=ExtResource("6_i6g32")]
+position = Vector2(537, 272)
