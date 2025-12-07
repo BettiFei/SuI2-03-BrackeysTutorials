@@ -1,10 +1,11 @@
-[gd_scene load_steps=32 format=4 uid="uid://cdoih5ksvocvt"]
+[gd_scene load_steps=33 format=4 uid="uid://cdoih5ksvocvt"]
 
 [ext_resource type="PackedScene" uid="uid://dkvpstmcylji1" path="res://Scenes/player.tscn" id="1_ebmjs"]
 [ext_resource type="Texture2D" uid="uid://dcu6xbex0wqeq" path="res://Assets/sprites/world_tileset.png" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://cs2y2emdn76xk" path="res://Scenes/killzone.tscn" id="3_wowpa"]
 [ext_resource type="PackedScene" uid="uid://b7rbk2kyeggpg" path="res://Scenes/platform.tscn" id="3_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://dwvvk4hbbxyxf" path="res://Scenes/coin.tscn" id="4_3dryh"]
+[ext_resource type="PackedScene" uid="uid://r3gttedegtul" path="res://Scenes/slime.tscn" id="6_i6g32"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wowpa"]
 texture = ExtResource("2_qxrlw")
@@ -587,7 +588,7 @@ position = Vector2(-1, 649)
 shape = SubResource("WorldBoundaryShape2D_i6g32")
 
 [node name="Player" parent="." instance=ExtResource("1_ebmjs")]
-position = Vector2(863, 292)
+position = Vector2(20, 554)
 speed = 110.0
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -742,3 +743,7 @@ position = Vector2(907, 257)
 
 [node name="Coin25" parent="Coins" instance=ExtResource("4_3dryh")]
 position = Vector2(940, 286)
+
+[node name="Slime" parent="." instance=ExtResource("6_i6g32")]
+z_index = 1
+position = Vector2(105, 559)
